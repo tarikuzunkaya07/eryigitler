@@ -11,7 +11,8 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Styles -->
-    <link href="/css/app.css" rel="stylesheet">
+   <!-- <link href="/css/app.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="{{ asset('/css/bootstrap.css') }}">
 
     <!-- Scripts -->
     <script>
@@ -50,7 +51,7 @@
                     <ul class="nav navbar-nav navbar-right">
                         <!-- Authentication Links -->
                         @if (Auth::guest())
-                            <li><a href="{{ url('/login') }}">Login</a></li>
+                            <li><a id="login" href="{{ url('/login') }}">Login</a></li>
                             <li><a href="{{ url('/register') }}">Register</a></li>
                         @else
                             <li class="dropdown">
@@ -77,11 +78,12 @@
                 </div>
             </div>
         </nav>
-
-        @yield('content')
+            @yield('content')
     </div>
 
     <!-- Scripts -->
+    <script src="{{ asset('/js/jquery-3.1.1.js') }}"></script>
+    <script src="{{ asset('/js/bootstrap.js') }}"></script> 
     <script src="/js/app.js"></script>
 </body>
 </html>

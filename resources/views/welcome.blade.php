@@ -7,6 +7,10 @@
 
         <title>Laravel</title>
 
+        <link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}">
+        <script type="text/javascript" src="{{ asset('js/jquery-3.1.1.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('js/bootstrap.js') }}"></script>
+
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
 
@@ -86,6 +90,9 @@
                     <a href="https://github.com/laravel/laravel">GitHub</a>
                 </div>
             </div>
+        </div>
+        <div class="container">
+            afdas
         </div>
     </body>
 </html>

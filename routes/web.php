@@ -14,6 +14,9 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/car', function () {
+    return view('partials.carousel');
+});
 
 Auth::routes();
 
