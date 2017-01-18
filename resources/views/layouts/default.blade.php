@@ -11,26 +11,14 @@
     <title>{{ config('app.name', 'Laravel') }}</title>
 
     <!-- Styles -->
-    <link href="/css/app.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
-    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
-    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> -->
+   <!-- <link href="/css/app.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="{{ asset('/css/bootstrap.css') }}">
 
     <!-- Scripts -->
     <script>
         window.Laravel = <?php echo json_encode([
             'csrfToken' => csrf_token(),
         ]); ?>
-    </script>
-    <script type="text/javascript" src="{{ asset('/tinymce/tinymce.min.js') }}"></script>
-    <script type="text/javascript">
-      tinymce.init({
-        selector : "textarea",
-        plugins : ["advlist autolink lists link image charmap print preview anchor", "searchreplace visualblocks code fullscreen", "insertdatetime media table contextmenu paste"],
-        toolbar : "insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image",
-        language: 'tr_TR'
-      }); 
     </script>
 </head>
 <body>
@@ -56,17 +44,14 @@
                 <div class="collapse navbar-collapse" id="app-navbar-collapse">
                     <!-- Left Side Of Navbar -->
                     <ul class="nav navbar-nav">
-                        <li class="dropdown">
-                          <ul class="dropdown-menu">
-                            <!-- <li role="separator" class="divider"></li> -->
-                            </ul>                    
+                        &nbsp;
                     </ul>
 
                     <!-- Right Side Of Navbar -->
                     <ul class="nav navbar-nav navbar-right">
                         <!-- Authentication Links -->
                         @if (Auth::guest())
-                            <li><a href="{{ url('/login') }}">Login</a></li>
+                            <li><a id="login" href="{{ url('/login') }}">Login</a></li>
                             <li><a href="{{ url('/register') }}">Register</a></li>
                         @else
                             <li class="dropdown">
@@ -93,12 +78,12 @@
                 </div>
             </div>
         </nav>
-        <div class="container">
             @yield('content')
-        </div>
     </div>
 
     <!-- Scripts -->
+    <script src="{{ asset('/js/jquery-3.1.1.js') }}"></script>
+    <script src="{{ asset('/js/bootstrap.js') }}"></script> 
     <script src="/js/app.js"></script>
 </body>
 </html>
