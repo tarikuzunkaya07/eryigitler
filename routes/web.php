@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('layouts.deneme');
+    return view('frontend.layouts.default');
 });
 Route::get('/car', function () {
     return view('partials.carousel');
@@ -23,4 +23,4 @@ Route::get('/asd', function () {
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index');
+Route::get('/admin', 'HomeController@index');
