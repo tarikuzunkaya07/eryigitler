@@ -3,9 +3,11 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://use.fontawesome.com/942d5e75df.js"></script>
 
 	<!--<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>-->
 
+	<link rel="stylesheet" href="/css/bootstrap.css">
 	<link rel="stylesheet" href="/css/reset.css"> <!-- CSS reset -->
 	<link rel="stylesheet" href="/css/style.css"> <!-- Resource style -->
 	<script src="js/modernizr.js"></script> <!-- Modernizr -->
@@ -37,43 +39,41 @@
 			<ul>
 				<li>
 					<a href="#cd-placeholder-1">
-						<b>Intro</b>
+						<b>HAKKIMIZDA</b>
 						<span></span><!-- icon -->
+
 					</a>
 				</li>
 				<li>
 					<a href="#cd-placeholder-2">
-						<b>Location</b>
+						<b>ÜRÜNLER</b>
 						<span></span><!-- icon -->
 					</a>
 				</li>
 				<li>
 					<a href="#cd-placeholder-3">
-						<b>Chat</b>
+						<b>TEREYAĞ</b>
 						<span></span><!-- icon -->
 					</a>
 				</li>
 				<li>
 					<a href="#cd-placeholder-4">
-						<b>Calendar</b>
-						<span></span><!-- icon -->
+						<b>İLETİŞİM</b>
+						<span><img src="img/map-marker.svg" style="width: 30px"></span><!-- icon -->
 					</a>
 				</li>
-				<li>
+			<!--	<li>
 					<a href="#cd-placeholder-5">
 						<b>Stats</b>
 						<span></span><!-- icon -->
-					</a>
-				</li>
+			<!--		</a>
+				</li> -->
 			</ul>
 		</nav>
 	</div> <!-- .cd-secondary-nav -->
 	<main class="cd-main-content">
 		<section id="cd-placeholder-1" class="cd-section cd-container">
-			<h2>Intro</h2>
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem ab consequatur fugiat delectus sint in velit quo possimus, ullam aspernatur ipsa natus tenetur nulla distinctio doloremque totam. Earum enim sed dolorum, exercitationem temporibus quaerat eos, accusantium amet facilis facere eaque commodi optio quidem rem minima nisi laborum quae animi nostrum aut voluptates veniam. Cum neque quam fuga sapiente quidem eum necessitatibus nulla, cupiditate a, repudiandae iusto in dolor eaque commodi nostrum consequuntur dolores velit eligendi dolorem quae. Distinctio quae, cumque aliquid quos consequuntur perspiciatis voluptates, laboriosam velit qui et aut sint esse nemo voluptatibus, dolore veritatis natus facilis commodi sed. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis tempore, harum consequatur optio laboriosam nihil sint voluptatem ducimus porro quae expedita alias consectetur explicabo cumque maxime facere praesentium! Ad illo quibusdam omnis suscipit qui eos autem est laborum ducimus! Tenetur?
-			</p>
+			@include('frontend.hakkimizda')
 		</section> <!-- #cd-placeholder-1 -->
 
 		<section id="cd-placeholder-2" class="cd-section cd-container">
