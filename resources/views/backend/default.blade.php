@@ -3,20 +3,23 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>AdminLTE 2 | Fixed Layout</title>
+  <!-- CSRF Token -->
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+
+  <title>Eryiğitler Şarküteri Evi</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.6 -->
-  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="/css/bootstrap.css">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
   <!-- Ionicons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
   <!-- Theme style -->
-  <link rel="stylesheet" href="css/AdminLTE.css">
+  <link rel="stylesheet" href="/css/AdminLTE.css">
   <!-- AdminLTE Skins. Choose a skin from the css/skins
        folder instead of downloading all of them to reduce the load. -->
-  <link rel="stylesheet" href="css/_all-skins.css">
+  <link rel="stylesheet" href="/css/_all-skins.css">
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -65,7 +68,7 @@
                   <li><!-- start message -->
                     <a href="#">
                       <div class="pull-left">
-                        <img src="img/img2.jpg" class="img-circle" alt="User Image">
+                        <img src="/img/img2.jpg" class="img-circle" alt="User Image">
                       </div>
                       <h4>
                         Support Team
@@ -136,13 +139,13 @@
           <!-- User Account: style can be found in dropdown.less -->
           <li class="dropdown user user-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              <img src="img/img2.jpg" class="user-image" alt="User Image">
+              <img src="/img/img2.jpg" class="user-image" alt="User Image">
               <span class="hidden-xs">Alexander Pierce</span>
             </a>
             <ul class="dropdown-menu">
               <!-- User image -->
               <li class="user-header">
-                <img src="img/img2.jpg" class="img-circle" alt="User Image">
+                <img src="/img/img2.jpg" class="img-circle" alt="User Image">
 
                 <p>
                   Alexander Pierce - Web Developer
@@ -193,7 +196,7 @@
       <!-- Sidebar user panel -->
       <div class="user-panel">
         <div class="pull-left image">
-          <img src="img/img2.jpg" class="img-circle" alt="User Image">
+          <img src="/img/img2.jpg" class="img-circle" alt="User Image">
         </div>
         <div class="pull-left info">
           <p>Alexander Pierce</p>
@@ -290,22 +293,17 @@
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <section class="content-header">
-      <h1>
-        Fixed Layout
-        <small>Blank example to the fixed layout</small>
-      </h1>
-      <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li><a href="#">Layout</a></li>
-        <li class="active">Fixed</li>
-      </ol>
+      <h1>@yield('title')</h1>
+      <div class="container">
+        @yield('content')
+      </div>
     </section>
-
+    
     <!-- Main content -->
     <!--<section class="content">
       <div class="callout callout-info">
         <h4>Tip!</h4>
-      </div>
+      </div> -->
       <!-- Default box -->
       <!--<div class="box">
         <div class="box-header with-border">
@@ -320,18 +318,18 @@
         </div>
         <div class="box-body">
           Start creating your amazing application!
-        </div>
+        </div> -->
         <!-- /.box-body -->
         <!--<div class="box-footer">
           Footer
-        </div>
+        </div> -->
         <!-- /.box-footer-->
-      <!--</div>
+      <!--</div> -->
       <!-- /.box -->
 
-    <!--</section>
+    <!--</section> -->
     <!-- /.content -->
-  <!--</div>
+  <!--</div> -->
   <!-- /.content-wrapper -->
 
   <!--<footer class="main-footer">
@@ -343,16 +341,16 @@
   </footer> -->
 
 <!-- jQuery 2.2.3 -->
-<script src="js/jquery-3.1.1.js"></script>
+<script src="/js/jquery-3.1.1.js"></script>
 <!-- Bootstrap 3.3.6 -->
-<script src="js/bootstrap.js"></script>
+<script src="/js/bootstrap.js"></script>
 <!-- SlimScroll -->
-<script src="js/backend/jquery.slimscroll.min.js"></script>
+<script src="/js/backend/jquery.slimscroll.min.js"></script>
 <!-- FastClick -->
-<script src="js/backend/fastclick.js"></script>
+<script src="/js/backend/fastclick.js"></script>
 <!-- AdminLTE App -->
-<script src="js/backend/ALTE_app.js"></script>
+<script src="/js/backend/ALTE_app.js"></script>
 <!-- AdminLTE for demo purposes -->
-<script src="js/backend/demo.js"></script>
+<script src="/js/backend/demo.js"></script>
 </body>
 </html>

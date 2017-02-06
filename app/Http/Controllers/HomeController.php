@@ -25,4 +25,9 @@ class HomeController extends Controller
     {
         return view('backend.default');
     }
+
+    public function urunler()
+    {
+        return view('backend.urunler');
+    }
 }
