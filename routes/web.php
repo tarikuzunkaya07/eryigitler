@@ -24,4 +24,5 @@ Route::get('/asd', function () {
 Auth::routes();
 
 Route::get('/admin', 'HomeController@index');
-Route::get('/admin/urunler', 'HomeController@urunler');
+Route::get('/admin/urunler', 'FileUploadController@index');
+Route::post('/admin/urunler', 'FileUploadController@store');

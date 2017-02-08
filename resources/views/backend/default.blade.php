@@ -20,6 +20,8 @@
   <!-- AdminLTE Skins. Choose a skin from the css/skins
        folder instead of downloading all of them to reduce the load. -->
   <link rel="stylesheet" href="/css/_all-skins.css">
+  <!--jasny-bootstrap fileInput -->
+  <link rel="stylesheet" href="/jasny-bootstrap/css/jasny-bootstrap.min.css">
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -294,9 +296,7 @@
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>@yield('title')</h1>
-      <div class="container">
         @yield('content')
-      </div>
     </section>
     
     <!-- Main content -->
@@ -352,5 +352,7 @@
 <script src="/js/backend/ALTE_app.js"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="/js/backend/demo.js"></script>
+
+<script src="/jasny-bootstrap/js/jasny-bootstrap.min.js"></script>
 </body>
 </html>

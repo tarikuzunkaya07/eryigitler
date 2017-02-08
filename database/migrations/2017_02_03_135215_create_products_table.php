@@ -18,7 +18,7 @@ class CreateProductsTable extends Migration
             $table->string('name');
             $table->string('description');
             $table->integer('pic_id')->unsigned();
-            $table->foreign('pic_id')->references('id')->on('pictures');
+            $table->foreign('pic_id')->references('id')->on('pictures')->onDelete('cascade');
             $table->timestamps();
         });
     }
