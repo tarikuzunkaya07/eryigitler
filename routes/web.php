@@ -17,9 +17,6 @@ Route::get('/', function () {
 Route::get('/car', function () {
     return view('partials.carousel');
 });
-Route::get('/asd', function () {
-    return view('site.asdasd');
-});
 
 Auth::routes();
 
